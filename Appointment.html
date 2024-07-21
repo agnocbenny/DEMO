@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<div class="row">
+		<div class="col-md-12 mx-0 m-padding-lr">
+			<fieldset>
+				<div class="mt-3">
+					<!-- <div class="row">
+						<div class="col-md-12 col-sm-12 col-12">
+							<div class="form-group">
+							<input id="name" required="required" type="text" name="name" placeholder="Enter Name" minlength="3">
+							</div>
+						</div>
+					  </div> -->
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-12">
+							<div class="form-group">
+								<span id="error-brand" style="display:none;color:red;"><small>Select a Brand*</small></span>
+								<select class="branded" required="" name="brand">
+									<option value="">Select a Brands...</option>
+									<option value="1">HONDA</option><option value="2">HYUNDAI</option><option value="3">MARUTI SUZUKI</option><option value="4">MAHINDRA</option><option value="5">TATA</option><option value="6">KIA</option><option value="7">SKODA</option><option value="8">RENAULT</option><option value="9">CHEVROLET</option><option value="10">TOYOTA</option><option value="11">FIAT</option><option value="12">ASTON MARTIN</option><option value="13">AUDI</option><option value="14">BENTLEY</option><option value="15">BMW</option><option value="16">FERRARI</option><option value="17">JAGUAR</option><option value="18">LAMBORGHINI</option><option value="19">LEXUS</option><option value="20">MASERATI</option><option value="21">MERCEDES</option><option value="22">MINI</option><option value="23">MITSUBISHI</option><option value="24">PORSCHE</option><option value="25">VOLVO</option><option value="26">Volkswagen</option><option value="27">Ford</option><option value="28">Jeep</option><option value="29">NISSAN</option><option value="30">RENAULT</option><option value="31">MG</option>												</select>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-12">
+							<div class="form-group">
+								<span id="error-model" style="display:none;color:red;"><small>Select a Model*</small></span>
+								<select required="" name="model" id="form_model" onchange="$('#error-model').hide();$('#form_model').css('border-color','black')">
+									<option>Select Car Model</option>
+
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-12">
+							<div class="form-group">
+								<span id="error-name" style="display:none;color:red;"><small>Enter a Valid Name*</small></span>
+								<input id="name" required="required" type="text" name="name" placeholder="Enter Name" minlength="3" onkeyup="document.getElementById('error-name').style.display='none';$('#name').css('border-color','black');">
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-12">
+							<div class="form-group">
+																	
+							<select class="" id="city" required="" name="city" onchange="$('#error-city').hide();$('#city').css('border-color','#afa9a9')">
+												<option value="">Select City...</option>
+												<option value="1">Delhi</option><option value="2">Gurgaon</option><option value="3">Ghaziabad</option><option value="4">Noida</option><option value="5">Faridabad</option><option value="6">Bangalore</option><option value="7">Pune</option><option value="8">Mumbai</option><option value="9">Hyderabad</option><option value="10">Thane</option><option value="11">Navi Mumbai</option>															</select>
+											<span id="error-city" style="display:none;color:red;"><small>Select a city*</small></span>
+
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-12">
+							<div class="form-group">
+								<span id="error-number" style="display:none;color:red;"><small> Enter Valid 10 Digit Mobile Number*</small></span>
+								<input id="number" required="required" type="text" name="number" placeholder="Contact Number" maxlength="10" onkeyup="document.getElementById('error-number').style.display='none';$('#number').css('border-color','black');">
+
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-12">
+							<div class="form-group" id="searchBoxContainer">
+								<input id="shiftfrm" type="text" name="location" class="form-control pac-target-input" placeholder="Please type and select full address" autocomplete="off">
+								<input type="hidden" id="lat_long1" name="lat_long" value="">
+								<input type="hidden" id="lat_long2" name="" value="">
+								<input type="hidden" id="from_state_new" name="from_state_new" value="">
+								<input type="hidden" id="latlong_city" name="latlong_city" value="">
+								<input type="hidden" id="sub_city1" name="sub_city1">
+							</div>
+						</div>
+						<!-- <div class="col-md-6 col-sm-6 col-6">
+							<div class="form-group user_otp">
+								<input id="otp" required="required" type="text" name="otp" placeholder="Enter OTP" minlength="6" maxlength="6">
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group user_otp text-left">
+								<a href="javascript:void();" class="btn btn-smbtn-success re-sendotp"><i id="resendotp" class="fas fa-sync"></i></a>
+								Re-send OTP
+							</div>
+						</div> -->
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-md-12 col-sm-12 col-12">
+						<div class="form-group">
+							<button id="submitnumber" type="button" name="submit" class="btn btn-success" value="button">Submit</button>&nbsp;&nbsp;
+
+							<!-- <button id="submitotp" type="button" name="submitotp" class="btn btn-success">Verify Otp</button>&nbsp;&nbsp; -->
+
+							<!-- <button id="resendotp" type="button" name="resendotp" class="btn btn-success" value="button">Resend Otp</button> -->
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+</head>
+<body>
+	
+</body>
+</html>
+
+
